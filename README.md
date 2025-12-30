@@ -72,3 +72,4 @@ export default defineConfig([
 ])
 ```
 # nest-chat-frontend
+# random-chat-frontend
