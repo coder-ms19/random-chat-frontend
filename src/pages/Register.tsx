@@ -38,7 +38,7 @@ export default function Register() {
             const loginRes = await api.post('/auth/login', { email, password });
             localStorage.setItem('token', loginRes.data.token);
             localStorage.setItem('user', JSON.stringify(loginRes.data.user));
-            navigate('/chat');
+            navigate('/');
         } catch (err: any) {
             setError(err.response?.data?.message || 'Registration failed. Please try again.');
         } finally {
